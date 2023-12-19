@@ -19,29 +19,40 @@ SO THAT I can assess whether they're a good candidate for an open position
 ## Acceptance Criteria
 
 ```md
-GIVEN a single-page application portfolio for a web developer
+✅ GIVEN a single-page application portfolio for a web developer
 WHEN I load the portfolio
 THEN I am presented with a page containing a header, a section for content, and a footer
-WHEN I view the header
+
+✅ WHEN I view the header
 THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
-WHEN I view the navigation titles
-THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
+
+✅ WHEN I view the navigation titles
+THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, `and the title corresponding to the current section is highlighted`// what does this mean?
+
 WHEN I click on a navigation title
 THEN the browser URL changes and I am presented with the corresponding section below the navigation and that title is highlighted
+
 WHEN I load the portfolio the first time
 THEN the About Me title and section are selected by default
+
 WHEN I am presented with the About Me section
 THEN I see a recent photo or avatar of the developer and a short bio about them
+
 WHEN I am presented with the Portfolio section
 THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories
+
 WHEN I am presented with the Contact section
 THEN I see a contact form with fields for a name, an email address, and a message
+
 WHEN I move my cursor out of one of the form fields without entering text
 THEN I receive a notification that this field is required
+
 WHEN I enter text into the email address field
 THEN I receive a notification if I have entered an invalid email address
+
 WHEN I am presented with the Resume section
 THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
+
 WHEN I view the footer
 THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 ```
@@ -54,39 +65,39 @@ The following animation shows the web application's appearance and functionality
 
 ## Getting Started
 
-You’ll use `vite` to build your portfolio, which will include the following:
+✅ You’ll use `vite` to build your portfolio, which will include the following:
 
-- A single `Header` component that appears on multiple pages
+- ✅ A single `Header` component that appears on multiple pages
 
-- A single `Navigation` component within the header that will use `Link` components from `react-router-dom` to conditionally render the different sections of your portfolio
+- ✅ A single `Navigation` component within the header that will use `Link` components from `react-router-dom` to conditionally render the different sections of your portfolio
 
-- A single `Project` component that will be used multiple times in the Portfolio section
+- ✅ A single `Project` component that will be used multiple times in the Portfolio section
 
-- A single `Footer` component that appears on multiple pages
+- ✅ A single `Footer` component that appears on multiple pages
 
-**Note**: Because this application doesn’t include a back end or connect to an API, the contact form doesn't need to save this information right now. You'll add back-end functionality in the next few weeks. In the meantime, consider including your email address and phone number on the Contact page.
+✅ **Note**: Because this application doesn’t include a back end or connect to an API, the contact form doesn't need to save this information right now. You'll add back-end functionality in the next few weeks. In the meantime, consider including your email address and phone number on the Contact page.
 
 ### When you would like to scaffold a new `vite` application on your own, follow these steps
 
-1. In the command line, navigate to the desired parent folder and run `npm create vite@latest`.
+1. ✅ In the command line, navigate to the desired parent folder and run `npm create vite@latest`.
 
    - 🔑 _Note_: This command will automatically create a sub-folder which will house your React application; you do not need to perform a `mkdir` command to create one manually.
 
-2. Enter the desired name of your new project folder.
+2. ✅ Enter the desired name of your new project folder.
 
-3. From the first list of options, select your framework; for our activities in class, we'll be using `React`.
+3. ✅ From the first list of options, select your framework; for our activities in class, we'll be using `React`.
 
-4. From the second list of options, select your variant; for our activities in class, we'll be using `JavaScript`.
+4. ✅ From the second list of options, select your variant; for our activities in class, we'll be using `JavaScript`.
 
-5. `cd` into your newly created project folder and run `npm install`.
+5. ✅ `cd` into your newly created project folder and run `npm install`.
 
    - In later activities we'll add additional NPM packages to our `vite` apps such as 'bootstrap', 'dotenv', and 'axios'.
 
-6. Run `npm dev`/`npm run dev` and navigate to the prompted URL to see your app.
+6. ✅ Run `npm dev`/`npm run dev` and navigate to the prompted URL to see your app.
 
 ### Further customization (Recommended)
 
-1. Navigate to your `package.json` and modify the `scripts` object so that it looks like this example:
+1. ✅ Navigate to your `package.json` and modify the `scripts` object so that it looks like this example:
 
 ```json
   "scripts": {
@@ -100,7 +111,7 @@ You’ll use `vite` to build your portfolio, which will include the following:
 
 - Note the addition of the `"start": "vite"` script.
 
-2. Navigate to the `vite.config.js` file and edit the export object so that it looks like this example:
+2. ✅ Navigate to the `vite.config.js` file and edit the export object so that it looks like this example:
 
 ```js
 export default defineConfig({
@@ -154,13 +165,13 @@ This Challenge is graded based on the following criteria:
 
 - Satisfies all of the preceding acceptance criteria plus the following:
 
-  - Application must use React to render content.
+  - ✅ Application must use React to render content.
 
-  - Application has a single `Header` component that appears on multiple pages, with a `Navigation` component within it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections.
+  - ✅ Application has a single `Header` component that appears on multiple pages, with a `Navigation` component within it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections.
 
-  - Application has a single `Project` component that’s used multiple times in the Portfolio section.
+  - ✅ Application has a single `Project` component that’s used multiple times in the Portfolio section.
 
-  - Application has a single `Footer` component that appears on multiple pages.
+  - ✅ Application has a single `Footer` component that appears on multiple pages.
 
   - Application must be deployed to Netlify.
 
