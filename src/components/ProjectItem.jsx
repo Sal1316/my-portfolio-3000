@@ -17,7 +17,7 @@ function ProjectItem({ id, image, title, link, repo }) {
             navigate("/projects/" + id); // the id is just the index value.
           }}
         ></div>
-        <h3>
+        <h3 className="pt-4">
           Project Link:<a href={link}>Click Me</a>
         </h3>
         <h3>

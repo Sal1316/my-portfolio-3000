@@ -9,7 +9,7 @@ const Home = () => {
     <div className="home">
       <div className="about">
         <h2>Hi, my name is Salvador</h2>
-        <div className="prompt">
+        <div className="prompt pt-5">
           <p>A software developer with a passion for creating.</p>
           <FaLinkedin />
           <FaGithub />

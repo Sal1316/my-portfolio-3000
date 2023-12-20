@@ -9,14 +9,17 @@
   padding-top: 10px;
   margin-top: 200px;
 }
-    
+.footer h3 {
+  color: white;
+}
+
 .socialMedia svg {
   color: white;
   margin: 20px;
   font-size: 70px;
   cursor: pointer;
 }
-    
+
 .footer p {
   color: white;
 }
