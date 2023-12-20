@@ -1,12 +1,12 @@
-/* .App {
+.App {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #e1cdcd;
+  background-color: #e9f1fb;
 }
-*/
+
 body {
   padding: 0;
   margin: 0;

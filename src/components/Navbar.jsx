@@ -1,12 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "../../Styles/Navbar.css";
-import ReorderIcon from "@mui/material/Drawer";
+import { FaBars } from "react-icons/fa";
 
 function Navbar() {
   const [expandNavbar, setExpandNavbar] = useState(false); // determins wheather or not we expanded the navbar or not.
+  const location = useLocation(); // gets info on which routes you are in.
+
+  useEffect(() => {
+    // run only when location variable changes. Basically, we only want it to run when the hamburger links have been clicked, so the hamburger disapears.
+    setExpandNavbar(false);
+  }, [location]);
+
   return (
-    <div className="navbar">
+    <div
+      id={expandNavbar ? "openHamburger" : "closedHanburger"}
+      className="navbar"
+    >
       <div className="toggleButton">
         <button
           onClick={() => {
@@ -14,14 +24,15 @@ function Navbar() {
           }}
         >
           {/* swithches state to its opposite. */}
-          <ReorderIcon />
+          <FaBars />
         </button>
       </div>
       <div className="links">
-        <Link to="/">Home</Link>
+        <Link to="/home">Home</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/resume">Resume</Link>
-        <Link to="/about">About</Link>
+        <Link to="/about">About Me</Link>
+        <Link to="/contact">Contact Info</Link>
       </div>
     </div>
   );
