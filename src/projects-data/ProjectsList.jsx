@@ -1,8 +1,8 @@
 import RadioHeadz from "../assets/images/radioheadz.png";
 import AceGame from "../assets/images/card-AceSpades.png";
 import Logo from "../assets/images/logo.png";
+import Todo from "../assets/images/mern-todo-list.png";
 import WeatherApp from "../assets/images/weatherApp.png";
-
 
 const ProjectsList = [
   {
@@ -26,21 +26,15 @@ const ProjectsList = [
   },
   {
     // deployed in pages.
-    image: WeatherApp, 
-    title: "Weather App",
-    link: "https://sal1316.github.io/my-weather-app-3000/",
-    repo: "https://github.com/Sal1316/my-weather-app-3000",
+    image: Todo,
+    title: "Todo-List",
+    link: "https://github.com/Sal1316/my-portfolio-3000",
+    repo: "https://github.com/Sal1316/my-portfolio-3000",
   },
   {
-    image: WeatherApp, 
+    image: WeatherApp,
     title: "Weather App",
-    link: "https://sal1316.github.io/my-weather-app-3000/",
-    repo: "https://github.com/Sal1316/my-weather-app-3000",
-  },
-  {
-    image: WeatherApp, 
-    title: "Weather App",
-    link: "https://sal1316.github.io/my-weather-app-3000/",
+    link: "https://github.com/Sal1316/my-weather-app-3000",
     repo: "https://github.com/Sal1316/my-weather-app-3000",
   },
 ];
