@@ -1,8 +1,10 @@
 import React from "react";
 import ResumeIcon from "../assets/images/resume-icon.png";
-import ResumePdf from "../assets/Salvador Ceja_Cover Letter.pdf"; // upload resume when done.
+import CoverLetterPdf from "../assets/Salvador Ceja_Cover Letter.pdf";
+import ResumePdf from "../assets/salvador-ceja-resume.pdf";
 
 const Resume = () => {
+  false && console.log(CoverLetterPdf);
   return (
     <div>
       <div className="col d-flex justify-content-center align-items-center">
